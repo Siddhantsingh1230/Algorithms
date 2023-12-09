@@ -9,22 +9,21 @@ void printLoop(int arr[], int size)
 
 void selectionSort(int *arr, int size)
 {
-    for (int i = 0; i < size - 1; i++)
+    for (int i = 0; i < size - 1; i++) // size - 1 passes
     {
         int min = i;
-        for (int j = i + 1; j < size; j++)
+        for (int j = i + 1; j < size; j++) // start from i + 1 index
         {
-            if (arr[j] < arr[min])
+            if (arr[min] > arr[j])
             {
                 min = j;
             }
         }
-        // swap
         if (min != i)
         {
-            int temp = arr[min];
-            arr[min] = arr[i];
-            arr[i] = temp;
+            int temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp;
         }
     }
 }
