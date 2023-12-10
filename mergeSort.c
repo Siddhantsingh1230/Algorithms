@@ -51,7 +51,7 @@ void merge(int *arr, int lower, int mid, int upper)
 }
 void mergeSort(int *arr, int lower, int upper)
 {
-    if (lower < upper) // means single element exists
+    if (lower < upper) // means atleast two elements are there
     {
         int mid = (lower + upper) / 2;
         mergeSort(arr, lower, mid);     // left division
