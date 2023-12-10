@@ -51,7 +51,7 @@ void quickSort(int *arr, int lower, int upper)
 // driver
 int main()
 {
-    int arr[] = {0,-22,27,-35,55,-77};
+    int arr[] = {5, 6, 1, 1, 2, 7, 4};
     int size = sizeof(arr) / sizeof(arr[0]);
     quickSort(arr, 0, size - 1);
     printLoop(arr, size);
